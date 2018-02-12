@@ -4,6 +4,7 @@ const API_KEY = "47b1462e-13fe-4cf3-b6d0-ac0e41b22e3d";
 //   key: API_KEY,
 //   debug: 3,
 // });
+navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia;
 
 $(function() {
   // Peer object

@@ -5,6 +5,8 @@
   <link rel="stylesheet" href="style.css">
   <script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script type="text/javascript" src="https://cdn.webrtc.ecl.ntt.com/skyway-latest.js"></script>
+  <script src="./clmtrackr.js"></script>
+  <script src="./model_pca_20_svm.js"></script>
   <!-- <script type="text/javascript" src="../key.js"></script> -->
   <script type="text/javascript" src="index.js"></script>
 </head>
@@ -16,7 +18,9 @@
   <!-- Video area -->
   <div class="pure-u-2-3" id="video-container">
     <div class="one-human">
-      <video id="their-video" autoplay playsinline></video>
+      <video id="their-video" autoplay playsinline>
+        <source src="franck.mp4" type="video/mp4"/>
+      </video>
     </div>
     <video id="my-video" muted="true" autoplay playsinline></video>
   </div>
@@ -59,8 +63,11 @@
       <p><a href="#" class="pure-button pure-button-error" id="end-call">End call</a></p>
     </div>
   </div>
+  <p id="pos"></p>
+  <button onclick="positionLoop()">pos</button>
 </div>
 
 
+<script src="./face.js"></script>
 </body>
 </html>
