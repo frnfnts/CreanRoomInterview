@@ -47,9 +47,14 @@ Copyright (c) Nicolas Gallagher and Jonathan Neal
 
 #their-video {
   position: -webkit-sticky;
-  width: 100%;
-  height: 75%;
-  max-height: 480px;
+  margin-top: 80px;
+  margin-left: 160px;
+
+  width: 200px;
+  height: 240px;
+  /* width: 80%; */
+  /* height: 75%; */
+  /* max-height: 480px; */
   background-color: #eee;
 }
 
@@ -64,3 +69,14 @@ Copyright (c) Nicolas Gallagher and Jonathan Neal
 #my-id {
   font-weight: bold;
 }
+
+.one-human {
+  background-image: url("./human.jpg");
+  background-size: cover;
+  position: -webkit-sticky;
+  width: 640px;
+  height: 480px;
+  /* width: 100%; */
+  /* height: 75%; */
+}
+.
